@@ -1,0 +1,51 @@
+
+h1{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+.maincon{
+    
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px;
+    width: 400px;
+    margin: auto;
+    cursor: pointer;
+    
+    
+}
+
+.redD{
+    background-color: red;
+    border: 10px solid black;
+    margin:10px;
+    border-radius: 20px;
+    
+    
+}
+.greenD{
+    background-color: green;
+    border: 10px solid black;
+    margin:10px;
+    border-radius: 20px;
+   
+    
+}
+.orangeD{
+    background-color: orange;
+    border: 10px solid black;
+    margin:10px;
+    border-radius: 20px;
+     
+}
+.blueD{
+    background-color: blue;
+    border: 10px solid black;
+    margin:10px;
+    border-radius: 20px;
+}
+.flash{
+    background: white;
+}
