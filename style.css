@@ -2,7 +2,7 @@
 h1{
     text-align: center;
 }
-p{
+h2{
     text-align: center;
 }
 .maincon{
@@ -47,5 +47,5 @@ p{
     border-radius: 20px;
 }
 .flash{
-    background: white;
+    background-color : white;
 }

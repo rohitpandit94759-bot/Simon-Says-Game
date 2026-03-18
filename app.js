@@ -1,24 +1,67 @@
-let para = document.querySelector("p");
-let orangeD = document.querySelector(".orangeD");
+let gameSeq = [];
+let userSeq = [];
+let h2 = document.querySelector("h2");
 
-document.addEventListener("keydown", function(){
-    para.innerText = "Level 1";
-    if(para.innerText == "Level 1"){
-        orangeD.addEventListener("click",flashBox);
-     console.log("you reached this level 1 ");
-}
+let btns = ["redD", "greenD", "orangeD", "blueD"];
+
+let started = false;
+let level = 0;
 
 
+document.addEventListener("keypress", function (){
+    if(started == false){
+        console.log("game is started");
+        started = true;
+        levelUp();
+    }
+
+    
 });
 
 
-function flashBox(){
-    orangeD.classList.add("flash");
+// ---------------------------------------------------------------------------------------------------------------------------
+
+// for flashing the button function 
+
+function btnFlash(btn){
+    btn.classList.add("flash");
 
     setTimeout(function(){
-        orangeD.classList.remove("flash");
-    },1000);
+        btn.classList.remove("flash");
+    },500)
 }
+// -----------------------------------------------------------------------------------------------------------------------------
+
+// for level up function
+function levelUp(){
+    level++;
+    h2.innerText = `Level ${level}`;
+
+    let randIdx = Math.floor(Math.random() *4);
+    let randColor = btns[randIdx];
+    let randBtn = document.querySelector(`.${randColor}`);
+    console.log(randIdx);
+    console.log(randColor);
+    console.log(randBtn);
+
+
+    btnFlash(randBtn);
+}
+
+// -------------------------------------------------------------------------------------------------------------------------------
+
+fun
+
+
+
+
+
+
+
+
+
+
+
 
 
 
