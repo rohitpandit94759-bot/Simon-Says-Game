@@ -3,31 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel = "stylesheet" href = "style.css"/>
+    <title>Simon Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <h1>Simon Game</h1>
     <h2>Press any key to start the game</h2>
 
-    <div class="maincon">
-    <div class = "redD"></div>
-    <div class = "greenD"></div>
-    <div class = "orangeD"></div>
-    <div class = "blueD"></div>
+    <div class="layout">
+
+        <div class="maincon">
+            <div class="btn red" id="red"></div>
+            <div class="btn green" id="green"></div>
+            <div class="btn yellow" id="yellow"></div>
+            <div class="btn blue" id="blue"></div>
+        </div>
+
+        <div class="inst">
+            <p><b>How to Play:</b></p>
+            <ul>
+                <li>Press any key to start the game</li>
+                <li>Watch the pattern of flashing colors carefully</li>
+                <li>Repeat the same sequence by clicking the buttons</li>
+                <li>The sequence gets longer each level</li>
+                <li>If you click the wrong color, the game is over</li>
+            </ul>
+        </div>
+
     </div>
 
+    <h3 class="feedback-text">Your feedback is valuable and will help improve this game experience.</h3>
 
+    <a href="https://forms.gle/hVfdBTKVAbEfZcAG6" target="_blank" class="feedback-btn">
+        Give Feedback
+    </a>
 
+    <script src="app.js"></script>
 
-
-
-
-
-
-
-
-
-    <script src = "app.js"></script>
 </body>
 </html>

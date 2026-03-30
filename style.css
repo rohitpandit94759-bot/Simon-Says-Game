@@ -1,51 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+}
 
-h1{
+h1, h2 {
     text-align: center;
 }
-h2{
-    text-align: center;
+
+.layout {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    margin-top: 20px;
 }
-.maincon{
-    
+
+.maincon {
     display: grid;
-    grid-template-columns: 200px 200px;
-    grid-template-rows: 200px 200px;
-    width: 400px;
-    margin: auto;
-    cursor: pointer;
-    
-    
+    grid-template-columns: repeat(2, 180px);
+    gap: 20px;
 }
 
-.redD{
+.btn {
+    height: 150px;
+    width: 150px;
+    border: 10px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.red {
     background-color: red;
-    border: 10px solid black;
-    margin:10px;
-    border-radius: 20px;
-    
-    
 }
-.greenD{
+
+.green {
     background-color: green;
-    border: 10px solid black;
-    margin:10px;
-    border-radius: 20px;
-   
-    
 }
-.orangeD{
-    background-color: orange;
-    border: 10px solid black;
-    margin:10px;
-    border-radius: 20px;
-     
+
+.yellow {
+    background-color: yellow;
 }
-.blueD{
+
+.blue {
     background-color: blue;
-    border: 10px solid black;
-    margin:10px;
-    border-radius: 20px;
 }
-.flash{
-    background-color : white;
+
+.gameFlash {
+    background-color: white;
+}
+
+.userFlash {
+    background-color: rgb(236, 230, 230);
+}
+
+.inst {
+    width: 260px;
+    background-color: #fff3cd;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #ffc107;
+    font-size: 14px;
+}
+
+.feedback-text {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.feedback-btn {
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    width: fit-content;
+}
+
+.feedback-btn:hover {
+    background-color: #45a049;
 }
